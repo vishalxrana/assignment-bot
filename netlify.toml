@@ -1,0 +1,6 @@
+[build]
+  command = "python index.py"
+  publish = ""
+
+[build.environment]
+  PYTHON_VERSION = "3.12.9"
