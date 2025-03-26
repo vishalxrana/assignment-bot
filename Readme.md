@@ -14,24 +14,20 @@ Follow these steps to run the application locally:
 
 **Steps:**
 
-1.  **Clone the Repository:**
+1.  **Create a Project Directory:**
+
+    Choose a location on your computer and create a new directory for your chatbot project. For example, you can name it `chat_app`.
+
+2.  **Clone the Repository:**
 
     First, you need to clone the repository to your local machine. Open your terminal and run:
 
     ```bash
     git clone https://github.com/vishalxrana/assignment-chatbot.git
+    cd assignment-bot
     ```
 
-    Open CMD from search bar `cd` into your directory
-    ```bash
-    cd <directory name>
-    ```
-
-2.  **Create a Project Directory:**
-
-    Choose a location on your computer and create a new directory for your chatbot project. For example, you can name it `chat_app`.
-
-2.  **Set up a Virtual Environment (Optional but Recommended):**
+3.  **Set up a Virtual Environment (Optional but Recommended):**
 
     It's recommended to use a virtual environment to isolate project dependencies.
 
@@ -50,7 +46,7 @@ Follow these steps to run the application locally:
         source venv/bin/activate
         ```
 
-3.  **Create Project Files:**
+4.  **Create Project Files:**
 
     Inside your project directory (`my_chatbot_app`), create the following files:
 
@@ -64,7 +60,7 @@ Follow these steps to run the application locally:
         ```
     *   **.env** (Optional, but highly recommended for API key security): Create a file named `.env` in the same directory as `index.py`. You will store your Gemini API key in this file.
 
-4.  **Install Python Packages:**
+5.  **Install Python Packages:**
 
     Navigate to your project directory in the terminal (where `requirements.txt` is located) and run:
 
@@ -74,7 +70,7 @@ Follow these steps to run the application locally:
 
     This command will install Streamlit, Google Generative AI library, and `python-dotenv` within your virtual environment.
 
-5.  **Set Up Environment Variables (API Key):**
+6.  **Set Up Environment Variables (API Key):**
 
     Your application needs the Gemini API key to access the Gemini model.
 
@@ -87,7 +83,7 @@ Follow these steps to run the application locally:
 
         **Important:**  Ensure you use the variable name `API_KEY` as used in the `index.py` code. **Do not commit your `.env` file to version control** (add it to your `.gitignore` file).
 
-6.  **Run the Streamlit Application:**
+7.  **Run the Streamlit Application:**
 
     In your terminal, make sure your virtual environment is activated. Then, navigate to your project directory and run the following command:
 
