@@ -61,13 +61,14 @@ if prompt := st.chat_input("Type your question here..."):
     with st.chat_message("user"):
         st.markdown(prompt)
 
-gemini_chat = st.session_state.gemini_chat 
-try:
-    response = gemini_chat.send_message(prompt)
-    bot_response = response.text
-except Exception as e:
-    bot_response = f"Sorry, I encountered an error: {e}"
+    gemini_chat = st.session_state.gemini_chat 
+    try:
+        response = gemini_chat.send_message(prompt)
+        bot_response = response.text
+    except Exception as e:
+        bot_response = f"Sorry, I encountered an error: {e}"
 
-st.session_state.chat_history.append({"role": "assistant", "content": bot_response})
-with st.chat_message("assistant"):
-    st.markdown(bot_response)
+    st.session_state.chat_history.append({"role": "assistant", "content": bot_response})
+    with st.chat_message("assistant"):
+        st.markdown(bot_response)
+
